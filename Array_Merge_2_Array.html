@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merge 2 Array</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a=[10,2,55,66];
+	var b=[11,22,5,8];
+	var c=[];
+	var j=0;
+	var merge=a.length+b.length;
+	for(i=0;i<merge;i++)
+	{
+		c[i]=a[i];
+		if(i>=a.length)
+		{
+			c[i]=b[j];
+			j++;
+		}
+	}
+	document.write(c);
+</script>
+</body>
+</html>
